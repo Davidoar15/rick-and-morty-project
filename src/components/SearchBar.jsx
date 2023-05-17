@@ -1,8 +1,10 @@
+import style from './SearchBar.module.css'
+
 export default function SearchBar(props) {
    return (
-      <div>
-         <input type="search" placeholder="Search Character"></input>
-         <button onClick={props.onSearch}>Add</button>
+      <div className={style.searchContainer}>
+         <input className={style.searchInput} type="search" placeholder="Search Character"></input>
+         <button className={style.btnSearch} onClick={props.onSearch}>Add</button>
       </div>
    );
 }

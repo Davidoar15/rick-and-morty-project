@@ -1,0 +1,40 @@
+.cardContainer {
+  position: relative;
+  margin: 50px;
+  padding: 10px;
+  transform: scale(0.95);
+  border: 10px ridge #5bc04e;
+  background-color: #94f387;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.cardContainer:hover {
+  background-color: #61ce53;
+}
+
+.btnBienvenida {
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 28px;
+    width: 28px;
+    font-size: 15px;
+    font-weight: 1000;
+    position: absolute;
+    top: 0; right: 0;
+    background-color: #8bcf21;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+.btnBienvenida:hover {
+    border-color: #accfac;
+}
+
+h2 {
+  margin-left: 5px;
+  margin-right: 30px;
+  border: 1px solid black;
+}
+
+img {
+  border-radius: 20px;
+}
