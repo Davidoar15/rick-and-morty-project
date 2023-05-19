@@ -26,7 +26,7 @@
     transition: border-color 0.25s;
   }
 .btnBienvenida:hover {
-    border-color: #accfac;
+    border-color: #ff0800;
 }
 
 h2 {
