@@ -1,0 +1,68 @@
+.firstRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 62px;
+}
+
+.imgProfile {
+    width: 250px;
+    height: 300px;
+    margin-left: 140px;
+    border: 7px outset red;
+}
+
+.descriptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    border: 2px solid black;
+    background-color: aquamarine;
+    height: 100%;
+    width: 700px;
+    padding: 2px; 
+}
+
+.descriptionH3 {
+    text-align: justify;
+}
+
+p {
+    text-align: justify;
+}
+
+.secondRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 20px;
+    margin-left: 28px;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: azure;
+    width: 20%;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 1);
+    transition: transform 0.3s ease;
+}
+.box:hover {
+    transform: scale(1.05);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.gifAbout {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}

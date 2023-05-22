@@ -7,11 +7,11 @@ import style from "./Nav.module.css"
 export default function Nav(props){
     return (
         <div className={style.navContainer}>
-            <NavLink to={'/about'}>
-                <button>About</button>
+            <NavLink to={'/about'} className={style.navLink}>
+                <button className={style.navLinkBtn}>About</button>
             </NavLink>
-            <NavLink to={'/home'}>
-                <button>Home</button>
+            <NavLink to={'/home'} className={style.navLink}>
+                <button className={style.navLinkBtn}>Home</button>
             </NavLink>
             <SearchBar onSearch={props.onSearch}/>
             <button className={style.logoutButton} onClick={props.logout}>Log Out</button>

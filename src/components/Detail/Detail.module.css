@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divText {
+    flex: 1; 
+    text-align: center;
+    margin-left: 200px;
+    padding: 50px;
+    background-color: lightblue;
+    border: 10px outset green;
+    transition: transform 1 ease;
+}
+
+.detailH2 {
+    color: rgb(73, 114, 11);
+}
+
+.divImg {
+    margin-left: 200px;
+    transition: transform 1 ease;
+}
+
+.divText:hover,
+.divImg:hover {
+    transform: scale(1.1);
+}
+
+.imgDetail {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 10px outset red;
+}

@@ -1,0 +1,42 @@
+.divError {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.divError:hover {
+    transform: translate(-50%,-50%) scale(1.4);
+}
+
+.divErrorText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.errorH1, 
+.errorP {
+    color: rgb(4, 34, 12)
+}
+
+.errorGift {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.errorGift img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 50px;
+}

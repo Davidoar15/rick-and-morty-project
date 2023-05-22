@@ -7,6 +7,8 @@
 }
 
 .searchInput {
+    position: relative;
+    left: 155%;
     border: 4px solid grey;
     border-radius: 15px;
     padding: 3px;
@@ -17,6 +19,8 @@
 }
 
 .btnSearch {
+    position: relative;
+    left: 155%;
     border-radius: 10px;
     border: 2px solid black;
     color: #3abe62;

@@ -1,18 +1,18 @@
 .cardContainer {
   position: relative;
-  margin: 50px;
-  padding: 10px;
+  width: 300px;
+  margin: 3px;
+  padding: 5px;
   transform: scale(0.95);
   border: 10px ridge #5bc04e;
-  background-color: #94f387;
-  cursor: pointer;
+  background-color: #61ce53;
   transition: background-color 0.25s;
 }
 .cardContainer:hover {
-  background-color: #61ce53;
+  background-color: #94f387;
 }
 
-.btnBienvenida {
+.btnErase {
     border-radius: 10px;
     border: 2px solid black;
     height: 28px;
@@ -25,16 +25,23 @@
     cursor: pointer;
     transition: border-color 0.25s;
   }
-.btnBienvenida:hover {
+.btnErase:hover {
     border-color: #ff0800;
 }
 
-h2 {
+.cardH3 {
+  text-align: center;
+  margin-top: 30px;
   margin-left: 5px;
-  margin-right: 30px;
-  border: 1px solid black;
+  margin-right: 5px;
+  border: 2px ridge #316759;
 }
 
-img {
+.cardH4 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.imgCard {
   border-radius: 20px;
 }

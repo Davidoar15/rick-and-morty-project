@@ -6,15 +6,17 @@ export default function Card({character, onClose}) {
 
    return (
       <div className={styles.cardContainer}>
-         <button className={styles.btnBienvenida} onClick={() => onClose(id)}>X</button>
+         <button className={styles.btnErase} onClick={() => onClose(id)}>X</button>
          <Link to={`/detail/${id}`}>
-            <h2>Name: { name }</h2>
+            <h3 className={styles.cardH3}>{ name }</h3>
          </Link>
-         <h2>Status: { status }</h2>
-         <h2>Species: { species }</h2>
-         <h2>Gender: { gender }</h2>
-         <h2>Origin: { origin.name }</h2>
-         <img src={ image } alt={name}/>
+         <h4 className={styles.cardH4}>Status: { status }</h4>
+         <h4 className={styles.cardH4}>Species: { species }</h4>
+         <h4 className={styles.cardH4}>Gender: { gender }</h4>
+         <h4 className={styles.cardH4}>Origin: { origin.name }</h4>
+         <div className={styles.divImgCard}>
+         <img className={styles.imgCard} src={ image } alt={name}/>
+         </div>
       </div>
    );
 }

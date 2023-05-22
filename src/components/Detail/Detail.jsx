@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import styles from "./Detail.module.css"
 
 export default function Detail() {
 
@@ -20,13 +21,17 @@ export default function Detail() {
      }, [id]);
 
     return (
-        <div>
-            {character.name && <p>Name: {character.name}</p>}
-            {character.status && <p>Status: {character.status}</p>}
-            {character.species && <p>Species: {character.species}</p>}
-            {character.gender && <p>Gender: {character.gender}</p>}
-            {character.origin && character.origin.name && <p>Origin: {character.origin.name}</p>}
-            {character.image && <img src={character.image} alt="Character" />}
+        <div className={styles.container}>
+            <div className={styles.divText}>
+                {character.name && <h2 className={styles.detailH2}>Name: {character.name}</h2>}
+                {character.status && <h2 className={styles.detailH2}>Status: {character.status}</h2>}
+                {character.species && <h2 className={styles.detailH2}>Species: {character.species}</h2>}
+                {character.gender && <h2 className={styles.detailH2}>Gender: {character.gender}</h2>}
+                {character.origin && character.origin.name && <h2 className={styles.detailH2}>Origin: {character.origin.name}</h2>}
+            </div>
+            <div className={styles.divImg}>
+                {character.image && <img className={styles.imgDetail} src={character.image} alt="Character" />}
+            </div>
         </div>
     );
 }
