@@ -39,6 +39,7 @@ function App() {
     const characterId = characters.filter(character => character.id === Number(id));
 
     if(characterId.length) return alert("The character already Exist!")
+    if(id < 1 || id > 826) return alert("Only exists 826 characters to search")
     axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
       if (data.name) {
         setCharacters((oldChars) => [...oldChars, data]);
