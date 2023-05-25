@@ -1,8 +1,6 @@
 ## Problemas Actuales del Proyecto (0.5v):
 
-- Diseño / Estilo actual: No responsive. 
-
-- Si se busca un ID de personaje mayor a 826 no ocurre nada, ni siquiera un alert sobre que el ID no existe. 
+- Diseño / Estilo actual: No responsive.  
 
 - No existe botón para agregar aleatoriamente un personaje. 
 
@@ -35,9 +33,7 @@
 
 - Design / Current Style: Not responsive. 
 
-- If a character ID greater than 826 is searched for, nothing happens, not even an alert that the ID does not exist.
-
-- No existe botón para agregar aleatoriamente un personaje. 
+- There is no button to add random character. 
 
 - In the Favorites section, the selectors, as styled, move when you scroll down the page. That is, if there are many Cards in Favorites, when you want to scroll down, the selectors will continue to be seen and will move behind the Cards as well.
 
