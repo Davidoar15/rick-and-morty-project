@@ -24,8 +24,8 @@ function Favorites({myFavorites, onClose}) {
          <div className={style.selectsFavorites}>
 
             <select name="order" onChange={handleOrder} className={style.order}>
-               <option value="A">Ascendent</option>
-               <option value="D">Descendent</option>
+               <option value="A">Ascending</option>
+               <option value="D">Descending</option>
             </select>
 
             <select name="filter" onChange={handleFilter} className={style.filter}>
