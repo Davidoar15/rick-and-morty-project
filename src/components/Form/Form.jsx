@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import validateForm from "./validate";
-import style from "./Form.module.css"
+import style from "./Form.module.css";
 
 export default function Form({login}) {
 
@@ -34,16 +34,19 @@ export default function Form({login}) {
         } else {
             alert("Data is Incompleted. All fields must be filled");
         }
-    }
+    };
 
     return (
         <div className={style.divForm}>
 
             <h2 className={style.formH2}>Let's Fun, Berp!</h2>
+
             <img src="https://i.gifer.com/origin/1b/1beb908cab6520ce70dcc2aba8e28317.gif" className={style.divImgForm} alt="Gift Form"/>
 
             <form onSubmit={handleSubmit}>
+
                 <div className={style.divInputs}>
+
                     <div className={style.divInputEmail}>
                         <label className={style.labelForm}>Email</label>
                         <input name='email' value={userData.email} placeholder='example@gmail.com' type='email' className={style.inputForm} onChange={handleChange}></input>
@@ -57,12 +60,15 @@ export default function Form({login}) {
                         <input name='password' value={userData.password} placeholder='********' type='password' className={style.inputForm} onChange={handleChange}></input>
                         {errors.password && <h4 className={style.error}>{errors.password}</h4>}
                     </div>
+
                 </div>
 
                 <div className={style.divBtnForm}>
                     <button className={style.btnForm} type='submit'>Submit</button>
                 </div>
+
             </form>
+
         </div>
-    )
-}
+    );
+};

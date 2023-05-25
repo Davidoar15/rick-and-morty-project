@@ -38,7 +38,9 @@
     border-color: #3abe62;
 }
 
-.btnRandom {
+
+
+/*.btnRandom {
     border-radius: 10px;
     border: 2px solid black;
     color: #3abe62;
@@ -54,4 +56,4 @@
   }
 .btnRandom:hover {
     border-color: #3abe62;
-}
+}*/

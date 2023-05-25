@@ -36,6 +36,24 @@
     border-color: #3abe62;
 }
 
+.btnFavorites {
+    border-radius: 10px;
+    border: 2px solid black;
+    color: #3abe62;
+    height: 28px;
+    width: 91px;
+    margin: 5px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 1000;
+    background-color: #3d373c;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+.btnFavorites:hover {
+    border-color: #3abe62;
+}
+
 .navLink {
     text-decoration: none;
 }

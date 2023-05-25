@@ -8,6 +8,7 @@ import Nav from './components/Nav/Nav.jsx';
 import About from './components/About/About.jsx';
 import Detail from './components/Detail/Detail';
 import Error from './components/Error/Error';
+import Favorites from './components/Favorites/Favorites';
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -23,18 +24,21 @@ function App() {
       setAccess(true);
       navigate('/home');
     }
-  }
+  };
 
   function logout() {
     setAccess(false);
     navigate('/');
-  }
+  };
 
   useEffect(() => {
     !access && navigate('/');
   }, [access]);
 
   const onSearch = (id) => {
+    const characterId = characters.filter(character => character.id === Number(id));
+
+    if(characterId.length) return alert("The character already Exist!")
     axios(`https://rickandmortyapi.com/api/character/${id}`).then(({ data }) => {
       if (data.name) {
         setCharacters((oldChars) => [...oldChars, data]);
@@ -48,14 +52,14 @@ function App() {
     const parsedId = parseInt(id);
     const filteredCharacters = characters.filter((character) => character.id !== parsedId);
     setCharacters(filteredCharacters);
-  }
+  };
 
   useEffect(() => {
     if (location.pathname === '/') {
       return; 
     }
 
-    const validRoutes = ['/home', '/about', '/detail']; 
+    const validRoutes = ['/home', '/about', '/detail', '/favorites']; 
     const isValidRoute = validRoutes.some((route) =>
       location.pathname.startsWith(route)
     );
@@ -67,14 +71,18 @@ function App() {
 
   return (
     <div className="App">
+
       {location.pathname !== '/' && <Nav onSearch={onSearch} logout={logout}></Nav>}
+
       <Routes>
         <Route path="/" element={<Form login={login} />} />
         <Route path="/home" element={<Cards characters={characters} onClose={onClose} />} />
         <Route path="/about" element={<About />} />
+        <Route path="/favorites" element={<Favorites onClose={onClose} />} />
         <Route path="/detail/:id/*" element={<Detail />} />
         <Route path="/error" element={<Error />} />
       </Routes>
+
     </div>
   );
 }

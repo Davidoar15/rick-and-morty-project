@@ -2,34 +2,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin-left: 275px;
 }
-
+  
 .divText {
-    flex: 1; 
+    flex: 1;
     text-align: center;
-    margin-left: 200px;
-    padding: 50px;
+    padding: 30px;
     background-color: lightblue;
     border: 10px outset green;
-    transition: transform 1 ease;
+    transition: transform 1s ease;
+    max-width: 50%;
 }
-
-.detailH2 {
-    color: rgb(73, 114, 11);
-}
-
+  
 .divImg {
-    margin-left: 200px;
-    transition: transform 1 ease;
+    flex: 1;
+    text-align: center;
+    transition: transform 1s ease;
 }
-
+  
 .divText:hover,
 .divImg:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
-
+  
 .imgDetail {
     max-width: 100%;
     border-radius: 10px;
     border: 10px outset red;
+}
+  
+.container > div {
+    margin: auto;
 }

@@ -33,6 +33,7 @@
     justify-content: center;
     margin-top: 15px;
 }
+
 .btnForm {
     border-radius: 10px;
     border: 2px solid black;
@@ -44,7 +45,7 @@
     background-color: #3d373c;
     cursor: pointer;
     transition: border-color 0.25s;
-  }
+}
 .btnForm:hover {
     border-color: #3abe62;
 }
@@ -83,4 +84,3 @@
     margin-top: 0;
     margin-bottom: 0;
 }
-

@@ -1,0 +1,55 @@
+.generalContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favoritesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.selectsFavorites {
+    position: fixed;
+    top: 5px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.order {
+    margin-right: 400px;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: aquamarine;
+    height: 28px;
+    width: 138px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 1000;
+    background-color: #3d373c;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+.order:hover{
+    border-color: aquamarine;
+}
+
+.filter {
+    border-radius: 10px;
+    border: 2px solid black;
+    color: aquamarine;
+    height: 28px;
+    width: 125px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 1000;
+    background-color: #3d373c;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+.filter:hover{
+    border-color: aquamarine;
+}
