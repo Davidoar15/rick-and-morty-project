@@ -1,8 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import style from "./About.module.css";
 
 export default function About() {
+  const handleOpenInNewTab = (url) => {
+    const newWindow = window.open(url, "_blank");
+    if (newWindow) {
+      newWindow.opener = null;
+      newWindow.location = url;
+    }
+  };
+
   return (
     <div className={style.aboutContainer}>
       <div className={style.firstRow}>
@@ -53,29 +60,59 @@ export default function About() {
         <div className={style.box}>
           <h3>Soft Skills</h3>
           <ul>
-            <li>Responsabilidad y Compromiso</li>
-            <li>Comunicación y Honestidad</li>
+            <li>Responsable y Comprometido</li>
+            <li>Comunicativo y Honesto</li>
             <li>Cooperativo, Amigable y Empático</li>
           </ul>
         </div>
 
         <div className={style.box}>
-          <h3>Contacts (No funcional)</h3>
+          <h3>Contacts</h3>
           <ul>
             <li>
-              <Link>LinkedIn</Link>
+              <span
+                onClick={() =>
+                  handleOpenInNewTab(
+                    "https://www.linkedin.com/in/david-olivo-rodr%C3%ADguez-401412239/"
+                  )
+                }
+              >
+                LinkedIn
+              </span>
             </li>
             <li>
-              <Link>Facebook</Link>
+              <span
+                onClick={() =>
+                  handleOpenInNewTab("https://github.com/Davidoar15")
+                }
+              >
+                GitHub
+              </span>
             </li>
             <li>
-              <Link>Instagram</Link>
+              <span
+                onClick={() =>
+                  handleOpenInNewTab(
+                    "https://instagram.com/davidoar15?igshid=MmIzYWVlNDQ5Yg=="
+                  )
+                }
+              >
+                Instagram
+              </span>
             </li>
             <li>
-              <Link>Discord</Link>
+              <span
+                onClick={() =>
+                  handleOpenInNewTab(
+                    "https://www.facebook.com/david.olivo.1069"
+                  )
+                }
+              >
+                Facebook
+              </span>
             </li>
             <li>
-              <Link>Whatsapp</Link>
+              <span>Discord: Davidoar15#6491</span>
             </li>
           </ul>
         </div>

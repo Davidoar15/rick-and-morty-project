@@ -1,4 +1,4 @@
-## Problemas Actuales del Proyecto (0.5v):
+## Problemas Actuales del Proyecto (FrontEnd y BackEnd Implementados):
 
 - Diseño / Estilo actual: No responsive.  
 
@@ -29,7 +29,7 @@
 
 }
 
-## Current Project Issues (0.5v):
+## Current Project Issues (FrontEnd and BackEnd Implemented):
 
 - Design / Current Style: Not responsive. 
 
