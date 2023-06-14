@@ -18,6 +18,9 @@
     "supertest": "^6.3.3"
   },
   "dependencies": {
-    "nodemon": "^2.0.22"
+    "dotenv": "^16.1.4",
+    "nodemon": "^2.0.22",
+    "pg": "^8.11.0",
+    "sequelize": "^6.32.0"
   }
 }

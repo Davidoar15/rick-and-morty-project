@@ -1,4 +1,4 @@
-## Problemas Actuales del Proyecto (FrontEnd y BackEnd Implementados):
+## Problemas Actuales del Proyecto (FrontEnd,  BackEnd y DataBase Implementados):
 
 - Diseño / Estilo actual: No responsive.  
 
@@ -29,7 +29,7 @@
 
 }
 
-## Current Project Issues (FrontEnd and BackEnd Implemented):
+## Current Project Issues (FrontEnd, BackEnd and DataBase Implemented):
 
 - Design / Current Style: Not responsive. 
 
