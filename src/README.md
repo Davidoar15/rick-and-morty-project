@@ -12,7 +12,9 @@
 
 - Al irse a una ruta que no existe, se muestra la página de Error 404. Sin embargo, si habían Cards, ya sea en Home o en Favorites, al regresar a una de estas rutas mediante los botones, las Cards que habían ya no estarán. 
 
-- Al tratar de ir a una ruta, como por ejemplo "http://localhost:5173/home XX" o "http://localhost:5173/detail/4 XX", No se muestra la página de Error 404, sólo se refresca y vuelve al Form.  
+- Al tratar de ir a una ruta, como por ejemplo "http://localhost:5173/home XX" o "http://localhost:5173/detail/4 XX", No se muestra la página de Error 404, sólo se refresca y vuelve al Form. 
+
+- Sin Formulario para agregar nuevo Usuario y Contraseña a la Base de Datos.
 
 ----------   Espacio para FeedBack   ----------
 {
@@ -44,6 +46,8 @@
 - Going to a route that does not exist, the Error 404 page is displayed. However, if there were Cards, either in Home or in Favorites, when you return to one of these routes using the buttons, the Cards that were there will no longer be there. 
 
 - When trying to go to a route, such as "http://localhost:5173/home XX" or "http://localhost:5173/detail/4 XX", the 404 Error page is not displayed, only refresh and return to the Form.
+
+- Without Form to add new User and Password in Database.
 
 ----------   Space for FeedBack   ----------
 {
